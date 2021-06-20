@@ -17,7 +17,7 @@ const GuessBox = (props) => {
   const [answers, setAnswers] = useState("");
   const [attempts, setAttemps] = useState(0);
   const [rounds, setRounds] = useState(1);
-  const [randomNumber, setRandom] = useState(Math.round(Math.random() * 10));
+  const [randomNumber, setRandom] = useState(Math.round(Math.random() * 100));
   const [hint, setHint] = useState("");
 
   const Hint = () => {

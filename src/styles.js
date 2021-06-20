@@ -22,6 +22,13 @@ export const GameImage = styled.img`
   width: 50%;
 `;
 
+export const EndImage = styled.img`
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+`;
+
 export const ThemeButton = styled.button`
   border: none;
   color: white;

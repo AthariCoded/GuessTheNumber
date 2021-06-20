@@ -2,12 +2,11 @@ const gameImages = [
   {
     id: 1,
     image:
-      "https://i.natgeofe.com/n/f0dccaca-174b-48a5-b944-9bcddf913645/01-cat-questions-nationalgeographic_1228126.jpg",
+      "https://media2.giphy.com/media/oNm1Y941jxUZgpJDKa/giphy.gif?cid=6c09b9522326c8d790c9d0bc6db7c2b0186a9725d0f1cd3b&rid=giphy.gif&ct=s",
   },
   {
     id: 2,
-    image:
-      "https://static.boredpanda.com/blog/wp-content/uploads/2018/03/20482214_112993826025606_7343144601454116864_n-5ab02774b3329__880.jpg",
+    image: "https://i.gifer.com/y9Q.gif",
   },
   {
     id: 3,
