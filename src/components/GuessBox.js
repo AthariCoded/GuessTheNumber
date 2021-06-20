@@ -15,9 +15,8 @@ import {
 const GuessBox = (props) => {
   const [value, setValue] = useState("");
   const [answers, setAnswers] = useState("");
-  const [attemps, setAttemps] = useState(0);
+  const [attempts, setAttemps] = useState(0);
   const [rounds, setRounds] = useState(1);
-  const [msgRound, setMsgRound] = useState("Round: ");
   const [randomNumber, setRandom] = useState(Math.round(Math.random() * 10));
   const [hint, setHint] = useState("");
 
@@ -33,23 +32,22 @@ const GuessBox = (props) => {
     setAnswers(<p>Pick a number</p>);
 
     if (rounds < 4) {
-      if (attemps < 5) {
+      if (attempts < 5) {
         if (userGuess === randomNumber) {
           setAnswers(<p>Correct!</p>);
           setAttemps(0);
           setRounds("");
-          setMsgRound("");
           props.setPlay(false);
           props.setWin(true);
           setHint("");
         }
         if (userGuess > randomNumber) {
           setAnswers(<p>Too high, guess again</p>);
-          setAttemps(attemps + 1);
+          setAttemps(attempts + 1);
         }
         if (userGuess < randomNumber) {
           setAnswers(<p>Too low, guess again</p>);
-          setAttemps(attemps + 1);
+          setAttemps(attempts + 1);
         }
       } else {
         //attemps=5
@@ -62,7 +60,6 @@ const GuessBox = (props) => {
         } else {
           setAnswers("");
           setAttemps(0);
-          setMsgRound("");
           setRounds("");
           setAnswers(<p>Game over... You finished all rounds.</p>);
           props.setWin(false);
@@ -94,9 +91,8 @@ const GuessBox = (props) => {
           <TR>
             <TH>{answers}</TH>
             <TH>
-              {msgRound}
-              {rounds}
-              <p>Attemp:{attemps}</p>
+              <p>Rounds:{rounds}</p>
+              <p>Attempt:{attempts}</p>
             </TH>
           </TR>
         </StyledTable>
