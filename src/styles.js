@@ -3,7 +3,7 @@ import styled, { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
     body {
       background-image: radial-gradient(circle, #e2eafc, #ccdbfd, #004e98);
-        color: ${(props) => props.theme.mainColor};
+        color: ${(props) => props.theme.mainColor};  
     }
 `;
 
@@ -101,6 +101,7 @@ export const StyledTable = styled.table`
   width: 600px;
   height: 70px;
   text-align: center;
+  border-radius: 25px;
 `;
 export const TR = styled.tr`
   table-layout: fixed;
@@ -122,6 +123,7 @@ export const StyledTableHint = styled.table`
   width: 150px;
   height: 40px;
   text-align: center;
+  border-radius: 25px;
 `;
 export const TRH = styled.tr`
   table-layout: fixed;
