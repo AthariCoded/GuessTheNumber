@@ -30,7 +30,7 @@ function App() {
         <GlobalStyle />
 
         <Title> Can You Guess The Number? </Title>
-        <Description> Guess a number between 1 and 100 </Description>
+        <Description> Guess a number between 0 and 100 </Description>
 
         <GameImage alt="game picture" src={pic} />
         {setView()}

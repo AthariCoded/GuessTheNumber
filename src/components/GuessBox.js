@@ -87,12 +87,16 @@ const GuessBox = (props) => {
         </PlayButtonStyled>
       </ResultWrapper>
       <ResultWrapper>
+        <h3>You have 5 attemps and 3 rounds.</h3>
+      </ResultWrapper>
+      <ResultWrapper>
         <StyledTable>
           <TR>
             <TH>{answers}</TH>
             <TH>
               {msgRound}
               {rounds}
+              <p>Attemp:{attemps}</p>
             </TH>
           </TR>
         </StyledTable>
